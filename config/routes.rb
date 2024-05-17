@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources "tasks"
   resources "users"
 
-  resources "sessions"
+  resources "sessions" #resorce that doesn't have a model
   # get("/sessions", {:controller => "sessions", :action => "index"})
   # get("/sessions/:id", {:controller => "sessions", :action => "show"})
   # get("/sessions/new", {:controller => "sessions", :action => "new"})
