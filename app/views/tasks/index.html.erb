@@ -14,12 +14,12 @@
       <td>
         <%= task["description"] %>
       </td>
-      <td>
+      <td> <% if @current_user%>
         <form action="/tasks/<%= task["id"] %>" method="post">
           <input type="hidden" name="_method" value="delete">
           <button>Complete</button>
         </form>
-      </td>
+     <%end%> </td>
     </tr>
   <% end %>
 </table>
